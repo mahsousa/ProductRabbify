@@ -4,11 +4,11 @@ using System.Globalization;
 
 namespace ProductRabbify.Models
 {
-    public class Product
+    public class ProductModel
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ProdutoId { get; set; }
+        public int Id { get; set; }
 
         [Required]
         public string Name { get; set; }

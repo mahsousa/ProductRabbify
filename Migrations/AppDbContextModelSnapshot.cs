@@ -21,13 +21,13 @@ namespace ProductRabbify.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("ProductRabbify.Models.Product", b =>
+            modelBuilder.Entity("ProductRabbify.Models.ProductModel", b =>
                 {
-                    b.Property<int>("ProdutoId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("ProdutoId"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -43,7 +43,7 @@ namespace ProductRabbify.Migrations
                     b.Property<int>("Qtd")
                         .HasColumnType("int");
 
-                    b.HasKey("ProdutoId");
+                    b.HasKey("Id");
 
                     b.ToTable("Products");
                 });
