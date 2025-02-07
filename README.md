@@ -8,7 +8,7 @@ MySQL <br>
 Entity Framework Core <br>
 Docker <br>
 ##
-##📌 Funcionalidades
+##📌 Funcionalidades <br>
 Gerenciar Produtos: Criar, atualizar e listar produtos no catálogo.<br>
 Consultar Estoque: Verificar a disponibilidade de produtos.<br>
 Atualizar Estoque: Reduzir a quantidade disponível após um pedido.<br>
