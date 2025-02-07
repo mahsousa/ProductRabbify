@@ -1,4 +1,4 @@
-# Product Service (Produtos)
+# Product Service (Produtos) - Ainda em desenvolvimento
 Este microserviço gerencia o catálogo de produtos e controle de estoque, além de receber atualizações de pedidos via RabbitMQ.
 ##
 🚀 Tecnologias Utilizadas <br>
@@ -6,7 +6,7 @@ Este microserviço gerencia o catálogo de produtos e controle de estoque, além
 RabbitMQ <br>
 MySQL <br>
 Entity Framework Core <br>
-Docker <br><br>
+Docker <br>
 ##
 📌 Funcionalidades
 Gerenciar Produtos: Criar, atualizar e listar produtos no catálogo.
