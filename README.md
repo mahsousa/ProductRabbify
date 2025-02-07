@@ -1,15 +1,15 @@
-Order Service (Faturamento)
-Este microserviço gerencia o processamento de pedidos, integração com o estoque e comunicação via RabbitMQ.
-
+Product Service (Produtos)
+Este microserviço gerencia o catálogo de produtos e controle de estoque, além de receber atualizações de pedidos via RabbitMQ.
+##
 🚀 Tecnologias Utilizadas
 .NET 8
 RabbitMQ
 MySQL
 Entity Framework Core
 Docker
+##
 📌 Funcionalidades
-Criar Pedido: Recebe pedidos via API e publica mensagens no RabbitMQ.
-Validar Estoque: Consulta o Microserviço de Produtos para verificar a disponibilidade.
-Atualizar Estoque: Envia uma solicitação ao Microserviço de Produtos para reduzir a quantidade disponível.
-Confirmar Pedido: Atualiza o status do pedido e armazena no histórico.
-Histórico de Pedidos: Permite consultar pedidos já processados.
+Gerenciar Produtos: Criar, atualizar e listar produtos no catálogo.
+Consultar Estoque: Verificar a disponibilidade de produtos.
+Atualizar Estoque: Reduzir a quantidade disponível após um pedido.
+Notificação de Atualização: Enviar eventos via RabbitMQ para outros microserviços.
